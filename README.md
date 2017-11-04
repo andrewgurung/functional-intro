@@ -25,6 +25,9 @@ Haskel solution:
 ```
 sum [1..10]
 ```
+
+### Installation
+- [Haskell Download](https://www.haskell.org/platform/)
 -----------
 
 ## Types and Classes
