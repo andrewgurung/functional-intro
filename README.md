@@ -50,13 +50,43 @@ sum [1..10]
 - GHC installer pack includes some basic libraries for list manipulation
     - Eg: head, tail
 ```
-1. Addition
+1. Add two numbers:
 ghci> 2 + 15
 17
 
-2. Head
+2. Select the first element from a list:
 ghci> head [1,2,3,4]
 1
+
+3. Remove the first element from a list:
+ghci> tail [1,2,3,4]
+[2,3,4]
+
+4. Select the nth element of a list:
+ghci> [1,2,3,4,5] !! 2
+3
+
+5. Select the first n elements of a list:
+ghci> take 2 [1,2,3,4,5]
+[1,2]
+
+6.Remove the first n elements of a list:
+ghci> drop 2 [1,2,3,4,5]
+[3,4,5]
+
+7. Calculate the sum and product of a list:
+ghci> sum [1,2,3,4,5]
+15
+ghci> product [1,2,3,4,5]
+120
+
+8. Append two lists:
+ghci> [1,2,3] ++ [4,5]
+[1,2,3,4,5]
+
+9. Reverse a list:
+ghci> reverse [1,2,3,4,5]
+[5,4,3,2,1]
 ```
 -----------
 
