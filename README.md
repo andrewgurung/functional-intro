@@ -45,6 +45,19 @@ sum [1..10]
     ghci> 2 + 15  
     17
     ``` 
+
+### Basic Syntax
+- GHC installer pack includes some basic libraries for list manipulation
+    - Eg: head, tail
+```
+1. Addition
+ghci> 2 + 15
+17
+
+2. Head
+ghci> head [1,2,3,4]
+1
+```
 -----------
 
 ## Types and Classes
