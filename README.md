@@ -88,6 +88,18 @@ ghci> [1,2,3] ++ [4,5]
 ghci> reverse [1,2,3,4,5]
 [5,4,3,2,1]
 ```
+
+### Function Application
+- Mathematics:
+    - Parentheses is used to denote Function
+    - Space is reserved for Multiplication which is most often used in Mathematics
+    - `f(a, b) + c d`
+- Haskell:
+    - Asterisk is used to denote multiplication
+    - Space is reserved for Functions which is most common in Haskell
+    - `f a b + c*d`
+- f a + b
+    - Means (f a) + b, rather than f (a + b)
 -----------
 
 ## Types and Classes
