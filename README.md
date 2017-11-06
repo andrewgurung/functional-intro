@@ -100,6 +100,14 @@ ghci> reverse [1,2,3,4,5]
     - `f a b + c*d`
 - f a + b
     - Means (f a) + b, rather than f (a + b)
+- Converting Mathematics to Haskell
+    - f(x, g(y)) ==> f x (g y)
+    - f(x)g(y) ==> f x * g y
+
+### Haskell Scripts
+- In Haskell, programs are called scripts as they tend to be shorter
+- New functions are defined within a script, a text file ususally having a `.hs` suffix
+
 -----------
 
 ## Types and Classes
