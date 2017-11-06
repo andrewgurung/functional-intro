@@ -108,6 +108,41 @@ ghci> reverse [1,2,3,4,5]
 - In Haskell, programs are called scripts as they tend to be shorter
 - New functions are defined within a script, a text file ususally having a `.hs` suffix
 
+### My First Script
+- Save the following two function definitions in `test.hs` file
+```
+double x = x + x
+quadruple x = double (double x)
+```
+- Open file using GHCi in your terminal window
+```
+% ghci test.hs
+```
+- Run the loaded functions
+```
+> quadruple 10
+40
+```
+
+### Syntactic sugar
+- Use backtick for converting a function into infix operator
+```
+x `f` y 
+equals to f x y
+```
+
+- Finding average
+```
+average ns = sum ns `div` length ns
+```
+
+### Reloading a script
+- GHCi doesn't automatically detect script changes
+- Force reload using
+```
+:reload
+```
+
 -----------
 
 ## Types and Classes
