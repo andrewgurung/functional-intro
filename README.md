@@ -136,12 +136,22 @@ equals to f x y
 average ns = sum ns `div` length ns
 ```
 
-### Reloading a script
-- GHCi doesn't automatically detect script changes
-- Force reload using
+### Useful GHCi commands
 ```
-:reload
+:reload     [reloads current script]
+:load name  [load script name]
+:edit       [edit current script]
+:type expr  [show type of expr]
+:?          [show all commands]
+:quit       [quit GHCi]
 ```
+
+### Naming requirement
+- Functions and arguments must begin with lowercase. Eg: myFun, fun1, arg_2
+- List arguments usually have `s` suffix. Eg: xs, ns, nss (list of lists)
+
+### Layout Rule
+- Whitespace is important in Haskell
 
 -----------
 
