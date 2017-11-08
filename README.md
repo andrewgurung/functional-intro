@@ -156,7 +156,27 @@ average ns = sum ns `div` length ns
 -----------
 
 ## Types and Classes
+- Type is a name for a collection of related values
+- Type Error: `1 + False`
+- Checking type of an expression
+```
+ghci> :type False
+False :: Bool
 
+ghci> :type [False, True, False]
+[False, True, False] :: [Bool]
+
+ghci> :type [[False, True],[True]]
+[[False, True],[True]] :: [[Bool]]  ==> List of lists
+```
+- `e :: t` => expression has type t
+- Basic Types in Haskell
+    - Bool, Char, String, Int(fixed-precision integers), Integer(arbitary-precision integers), Float
+- Tuple: Sequence of values of different types
+```
+ghci> :type ('a', False)
+('a', False) :: (Char, Bool)
+```
 -----------
 
 ## Defining Functions
