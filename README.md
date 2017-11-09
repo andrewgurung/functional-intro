@@ -177,6 +177,30 @@ ghci> :type [[False, True],[True]]
 ghci> :type ('a', False)
 ('a', False) :: (Char, Bool)
 ```
+
+### Function type
+- A function is a mapping from values of one type t1 to another type t2 denoted as `t1 -> t2`
+```
+add :: (Int, Int) -> Int
+```
+
+### Curried Functions
+- Functions that take their arguments one at time are called curried functions
+- Any function with more than two arguments can be curried by returning nested functions
+
+- add' is a curried function that takes an integer which returns a function that also takes an integer as argument and returns an integer
+```
+add' :: Int -> (Int -> Int)
+
+Can also be written as
+
+add' :: Int -> Int -> Int
+```
+
+- add' can be written using tuples which is `not` a curried version
+```
+add :: (Int, Int) -> Int
+```
 -----------
 
 ## Defining Functions
