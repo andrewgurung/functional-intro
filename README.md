@@ -187,12 +187,14 @@ add :: (Int, Int) -> Int
 ### Curried Functions
 - Functions that take their arguments one at time are called curried functions
 - Any function with more than two arguments can be curried by returning nested functions
+- Curried functions are flexible because of partially applied functions
+- Unless tuple is required, all functions in Haskell are curried
 
 - add' is a curried function that takes an integer which returns a function that also takes an integer as argument and returns an integer
 ```
 add' :: Int -> (Int -> Int)
 
-Can also be written as
+Can also be written without paranthesis where arrow associates to the right.
 
 add' :: Int -> Int -> Int
 ```
@@ -200,6 +202,11 @@ add' :: Int -> Int -> Int
 - add' can be written using tuples which is `not` a curried version
 ```
 add :: (Int, Int) -> Int
+```
+- Function is applied in the left direction
+```
+mult x y z
+((mult x)y)z
 ```
 -----------
 
