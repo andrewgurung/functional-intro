@@ -248,6 +248,16 @@ ERROR
 
 ## Defining Functions
 
+### Conditional Expressions
+- Functions can be defined using conditional expressions
+- if then else
+```
+signum :: Int -> Int
+signum n = if n < 0 then -1 else
+              if n == 0 then 0 else 1
+```
+
+## Guarded Equations
 -----------
 
 ## List Comprehensions
