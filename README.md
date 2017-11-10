@@ -257,7 +257,7 @@ signum n = if n < 0 then -1 else
               if n == 0 then 0 else 1
 ```
 
-## Guarded Equations
+### Guarded Equations
 - Alternative to conditionals
 - Syntax function | condition = result
 - `otherwise` is a catch all condition
@@ -267,6 +267,31 @@ signum n | n < 0 = -1
          | otherwise = 1
 ```
 
+### Pattern Matching
+- Functions can be defined using pattern matching on their arguments
+- Note: Patterns do not repeat variables
+- `_` is a wildcard
+```
+True && b = b
+False && _ = False
+
+b && b = b // Error pattern repeat
+```
+
+### List Patterns
+- Every non-empty list is constructed by using cons operator (:) that concats element to form a list
+```
+[1,2,3,4]
+// can be written as 
+1:(2:(3:(4:[])))
+```
+
+- Functions on list can be defined using `x:xs` pattern
+    - x:xs pattern only matches non-empty list
+```
+head (x:_) = x
+tail (_:xs) = xs
+```
 
 -----------
 
