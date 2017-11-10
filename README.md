@@ -293,6 +293,41 @@ head (x:_) = x
 tail (_:xs) = xs
 ```
 
+### Lambda Expressions
+- Lambda expressions are used to construct functions without the need of function names
+
+- Currying
+    - add x y = x + y
+```
+add = \x -> (\y -> x+y)
+```
+
+- Avoid naming functions that are only referenced once
+```
+odds n = map f [0..n-1]
+         where
+            f x = x*2 + 1
+```
+Using lambda expressions
+```
+odds n = map (\x -> x*2 + 1) [0..n]
+```
+
+### Sections
+- Operators can be written using parentheses
+```
+> 1 + 2
+3
+
+> (1+) 2
+3
+
+> (+2) 2
+3
+
+> (/2) 4
+2
+```
 -----------
 
 ## List Comprehensions
