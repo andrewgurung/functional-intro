@@ -208,6 +208,13 @@ add :: (Int, Int) -> Int
 mult x y z
 ((mult x)y)z
 ```
+
+### Overloaded Functions
+- A function is called overloaded if its type contains one or more type variables
+```
+length :: [a] -> Int
+```
+- Here `a` can be of any type. The overloaded function `length` will take any list of String, Integer, Boolean etc and returns an integer
 -----------
 
 ## Defining Functions
