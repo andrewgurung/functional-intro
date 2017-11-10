@@ -258,6 +258,16 @@ signum n = if n < 0 then -1 else
 ```
 
 ## Guarded Equations
+- Alternative to conditionals
+- Syntax function | condition = result
+- `otherwise` is a catch all condition
+```
+signum n | n < 0 = -1
+         | n == 0 = 0
+         | otherwise = 1
+```
+
+
 -----------
 
 ## List Comprehensions
