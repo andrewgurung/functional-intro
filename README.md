@@ -314,7 +314,8 @@ odds n = map (\x -> x*2 + 1) [0..n]
 ```
 
 ### Sections
-- Operators can be written using parentheses
+- A shorter way of defining functions
+- Eg: Operators can be written using parentheses
 ```
 > 1 + 2
 3
