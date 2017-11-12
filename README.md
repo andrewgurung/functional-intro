@@ -348,7 +348,9 @@ odds n = map (\x -> x*2 + 1) [0..n]
 -----------
 
 ## Interactive Programs
-
+- Pure functions could be an overkill for task like readLine()
+- So we mix imperative code with pure functions together
+- Think of pure functions as islands in a sea of impure imperative code
 -----------
 
 ## Declaring Types and Classes
